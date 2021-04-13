@@ -5,3 +5,22 @@
  *? Class-based selectors which define undecorated design patterns, for example media object known from OOCSS
  * Wrappers.............Wrapping and constraining elements.
  */
+
+.container-cards {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100vw;
+  margin: 0 auto;
+}
+
+.wrapper-card {
+  width: 100%;
+
+  @include tablet {
+    width: 50%;
+  }
+
+  @include desktop {
+    width: 33%;
+  }
+}

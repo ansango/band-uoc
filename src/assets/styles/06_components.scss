@@ -8,4 +8,16 @@
  * Buttons..............Button elements.
  */
 
+@import "01_settings";
+@import "02_tools";
 
+.hero {
+  //background: url("/src/assets/images/hero.jpg") center;
+  background-size: cover;
+  padding: 34rem 2rem;
+
+  /* Grid styles */
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
