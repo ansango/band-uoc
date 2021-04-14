@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default () => {
   return (
-    <nav className="navbar navbar-expand-md navbar-light">
+    <nav className=" navbar navbar-expand-md navbar-light p-5">
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">
           Band Name

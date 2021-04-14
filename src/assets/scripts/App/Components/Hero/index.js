@@ -3,15 +3,25 @@ import React from "react";
 export default () => {
   return (
     <section className="hero">
-      <h1>You thirsty?</h1>
-      <article>
-        <p>
-          Explore local breweries with just one click and stirred by starlight
-          across the centuries light years great turbulent clouds
-          circumnavigated paroxysm of global death.
-        </p>
-        <a href="#breweries">Browse Breweries</a>
-      </article>
+      <div className="item item1"></div>
+      <div className="item item2"></div>
+      <div className="item item3">
+        <span>TOUR</span>
+      </div>
+      <div className="item item4">
+        <span>A</span>
+      </div>
+      <div className="item item5">
+        <span>BEAT</span>
+      </div>
+      <div className="item item6">
+        <span>BAND</span>
+      </div>
+      <div className="item item7">
+        <span>CONTACT</span>
+      </div>
+      <div className="item item8"></div>
+      <div className="item item9"></div>
     </section>
   );
 };

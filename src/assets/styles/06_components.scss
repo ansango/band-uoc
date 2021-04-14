@@ -11,13 +11,70 @@
 @import "01_settings";
 @import "02_tools";
 
-.hero {
-  //background: url("/src/assets/images/hero.jpg") center;
-  background-size: cover;
-  padding: 34rem 2rem;
+.home {
+  & .title-container {
+    padding: 200px 0;
 
-  /* Grid styles */
+    h1 {
+      font-size: 50px;
+    }
+    @include mobile-lg {
+      h1 {
+        font-size: 80px;
+      }
+    }
+
+    @include tablet {
+      h1 {
+        font-size: 120px;
+      }
+    }
+
+    @include desktop {
+      padding: 150px 0;
+    }
+  }
+}
+
+.hero {
+  max-width: 1200px;
+  margin: 0 auto;
   display: grid;
-  align-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  background-image: url("../images/hero/big.jpg");
+
+  @include tablet {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  & > * {
+    padding: 1rem;
+    height: 320px;
+  }
+
+  & .item1,
+  .item2,
+  .item8,
+  .item9 {
+    display: none;
+    @include tablet {
+      display: block;
+    }
+  }
+
+  & .item3,
+  .item4,
+  .item5,
+  .item6,
+  .item7 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  & span {
+    font-size: 50px;
+    color: #ffffff;
+    font-weight: bold;
+  }
 }

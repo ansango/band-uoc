@@ -3,7 +3,6 @@ import Card from "../../Components/Card";
 export default () => {
   return (
     <div>
-      <h2>Band</h2>
       <div className="container container-cards">
         {items.map((item, index) => {
           return (
