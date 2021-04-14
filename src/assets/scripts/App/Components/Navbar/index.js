@@ -25,22 +25,22 @@ export default () => {
         >
           <ul className="navbar-nav">
             <li className="nav-item">
-              <Link className="nav-link" to="/">
+              <Link className="nav-link text-primary" to="/">
                 Home
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/band">
+              <Link className="nav-link text-primary" to="/band">
                 Band
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/bio">
+              <Link className="nav-link text-primary" to="/bio">
                 Bio
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/tour">
+              <Link className="nav-link text-primary" to="/tour">
                 Tour
               </Link>
             </li>
