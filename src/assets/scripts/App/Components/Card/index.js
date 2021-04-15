@@ -1,5 +1,5 @@
 import React from "react";
-import svg from "url:./";
+
 export default (props) => {
   return (
     <div className="wrapper-card">
