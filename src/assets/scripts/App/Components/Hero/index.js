@@ -1,13 +1,16 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default () => {
   return (
     <section className="hero">
       <div className="item item1"></div>
       <div className="item item2"></div>
-      <div className="item item3">
+
+      <Link className="item item3 nav-link" to="/tour">
         <span>TOUR</span>
-      </div>
+      </Link>
+
       <div className="item item4">
         <span>A</span>
       </div>
@@ -17,9 +20,9 @@ export default () => {
       <div className="item item6">
         <span>BAND</span>
       </div>
-      <div className="item item7">
+      <Link className="item item7 nav-link" to="/band#contact">
         <span>CONTACT</span>
-      </div>
+      </Link>
       <div className="item item8"></div>
       <div className="item item9"></div>
     </section>

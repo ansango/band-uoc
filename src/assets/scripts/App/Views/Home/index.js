@@ -5,7 +5,7 @@ export default () => {
     <div className="home">
       <div className="container title-container text-center">
         <h1 className="fw-bold title">
-          We are <code class="text-primary">!==</code> undefined
+          We are <code className="text-primary">!==</code> undefined
         </h1>
       </div>
       <Hero />

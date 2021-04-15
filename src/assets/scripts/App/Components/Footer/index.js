@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default () => {
   return (
-    <div class="footer-dark">
+    <div>
       <footer>footer</footer>
     </div>
   );

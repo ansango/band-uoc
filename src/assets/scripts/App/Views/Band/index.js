@@ -1,5 +1,6 @@
 import React from "react";
 import Card from "../../Components/Card";
+import Contact from "../../Components/Contact";
 export default () => {
   return (
     <div>
@@ -9,11 +10,14 @@ export default () => {
             <Card
               key={index}
               name={item.name}
-              quote={item.quote}
               position={item.position}
-            ></Card>
+              img={item.img}
+            />
           );
         })}
+      </div>
+      <div>
+        <Contact />
       </div>
     </div>
   );
@@ -23,31 +27,26 @@ const items = [
   {
     name: "Anibal",
     position: "guitar",
-    quote: "Life is hard",
+    img: "me",
   },
   {
     name: "Anibal",
     position: "guitar",
-    quote: "Life is hard",
   },
   {
     name: "Anibal",
     position: "guitar",
-    quote: "Life is hard",
   },
   {
     name: "Anibal",
     position: "guitar",
-    quote: "Life is hard",
   },
   {
     name: "Anibal",
     position: "guitar",
-    quote: "Life is hard",
   },
   {
     name: "Anibal",
     position: "guitar",
-    quote: "Life is hard",
   },
 ];

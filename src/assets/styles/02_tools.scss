@@ -37,3 +37,14 @@
     @content;
   }
 }
+
+@mixin hover-item-grid($img-url, $opacity) {
+  background-image: $img-url;
+  background-position: center;
+  background-size: cover;
+  opacity: $opacity;
+  cursor: pointer;
+  & span {
+    display: none;
+  }
+}

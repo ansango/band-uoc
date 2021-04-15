@@ -40,7 +40,7 @@
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  background-image: url("../images/hero/big.jpg");
+  background-image: url("/src/assets/images/hero/big.jpg");
 
   @include tablet {
     grid-template-columns: repeat(3, 1fr);
@@ -76,5 +76,13 @@
     font-size: 50px;
     color: #ffffff;
     font-weight: bold;
+  }
+
+  & .item3:hover {
+    @include hover-item-grid(url("/src/assets/images/hero/tour.jpg"), 0.9);
+  }
+
+  & .item7:hover {
+    @include hover-item-grid(url("/src/assets/images/hero/contact.jpg"), 0.9);
   }
 }
