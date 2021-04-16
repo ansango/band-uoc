@@ -1,6 +1,7 @@
 import React from "react";
 import Card from "../../Components/Card";
 import Contact from "../../Components/Contact";
+//import imgas from "url:../../images/hero/big.jpg";
 export default () => {
   return (
     <div>
