@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default () => {
   return (
-    <section className="hero">
+    <section className="component_hero">
       <div className="item item1"></div>
       <div className="item item2"></div>
 

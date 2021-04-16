@@ -12,6 +12,7 @@
 
 @use "sass:color";
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;700&family=Montserrat:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 
 $primary: #fd3075;
 $danger: #ff4136;
@@ -22,7 +23,8 @@ $warning: #ff4136;
 $danger: #ff4136;
 $light: #ecd2ff;
 $dark: #df273e;
-
+$myBlack: #212529;
+$myWhite: #ffffff;
 $theme-colors: (
   "primary": $primary,
   "secondary": $secondary,
@@ -36,6 +38,7 @@ $theme-colors: (
 
 $font-family-sans-serif: "Montserrat", sans-serif;
 $font-family-monospace: "Fira Code", monospace;
+$font-family-serif: "Permanent Marker", cursive;
 
 $font-family-base: $font-family-sans-serif;
 $font-family-code: $font-family-monospace;

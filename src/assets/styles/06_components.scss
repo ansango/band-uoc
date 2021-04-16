@@ -7,36 +7,24 @@
  * Page-foot............The main page footer.
  * Buttons..............Button elements.
  */
-
-@import "01_settings";
-@import "02_tools";
-
-.home {
-  & .title-container {
-    padding: 200px 0;
-
+.view_home {
+  h1 {
+    font-size: 3.125rem;
+  }
+  @include mobile-lg {
     h1 {
-      font-size: 50px;
+      font-size: 5rem;
     }
-    @include mobile-lg {
-      h1 {
-        font-size: 80px;
-      }
-    }
+  }
 
-    @include tablet {
-      h1 {
-        font-size: 120px;
-      }
-    }
-
-    @include desktop {
-      padding: 150px 0;
+  @include tablet {
+    h1 {
+      font-size: 7.5rem;
     }
   }
 }
 
-.hero {
+.component_hero {
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
@@ -84,5 +72,91 @@
 
   & .item7:hover {
     @include hover-item-grid(url("/src/assets/images/hero/contact.jpg"), 0.9);
+  }
+}
+
+.view_band {
+  margin: 0 auto;
+  max-width: 960px;
+
+  h1 {
+    font-size: 4rem;
+    font-family: $font-family-serif;
+  }
+  @include mobile-lg {
+    h1 {
+      font-size: 4.5rem;
+    }
+  }
+
+  @include tablet {
+    h1 {
+      font-size: 7rem;
+    }
+  }
+}
+
+.component_card {
+  width: 100%;
+  display: flex;
+
+  @include tablet {
+    width: 50%;
+  }
+
+  @include desktop {
+    width: 33%;
+  }
+  & .component_content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  & .thumbnail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    border: 0.5rem solid $myBlack;
+    background-size: cover;
+    & > * {
+      display: none;
+    }
+    & > a {
+      cursor: pointer;
+    }
+  }
+
+  /* stylelint-disable */
+  & .thumbnail:hover {
+    background-image: none !important;
+    background-color: $myWhite;
+
+    & > * {
+      display: block;
+    }
+  }
+  /* stylelint-enable */
+}
+
+.note {
+  & figure {
+    margin: 0;
+  }
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  margin: 10px 0;
+  border: solid 1px #f9f9f9;
+  background-color: $myWhite;
+  box-shadow: 1px 8px 20px 1px rgb(222 222 222);
+  border-radius: 5px;
+
+  &:hover {
+    & cite {
+      color: $primary;
+    }
   }
 }

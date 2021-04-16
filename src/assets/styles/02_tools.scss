@@ -6,14 +6,6 @@
  * Mixins...............Useful mixins.
  */
 
-/**
-* @imports
-*/
-@import "01_settings";
-/**
-* @imports
-*/
-
 @mixin mobile-lg {
   @media only screen and (min-width: 576px) {
     @content;

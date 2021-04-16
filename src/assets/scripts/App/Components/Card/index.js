@@ -2,19 +2,32 @@ import React from "react";
 
 export default (props) => {
   return (
-    <div className="wrapper-card">
-      <div className="my-1 thumbnail">
-        <a
-          href="https://twitter.com"
-          target="_blank"
-          className="layer nav-link"
+    <div className="component_card">
+      <div className="component_content">
+        <div
+          className="my-1 thumbnail"
+          style={{
+            backgroundImage: `url(${props.thumb})`,
+          }}
         >
-          <i className="fab fa-twitter" aria-hidden="true"></i>
-        </a>
-      </div>
-      <div className="my-1">
-        <h5 className="card-title">{props.name}</h5>
-        <h6 className="card-subtitle mb-2 text-muted">{props.position}</h6>
+          <div>
+            <h5 className="">
+              <i className={`${props.emoji} fs-6 text-primary mx-2`}></i>
+              {props.name}
+            </h5>
+            <h6 className="">
+              <i className={`${props.icon} fs-6 text-primary mx-2`}></i>
+              {props.position}
+            </h6>
+            <q className="">
+              <i className="far fa-heart fs-6 text-primary mx-2"></i>
+              {props.love}
+            </q>
+          </div>
+          <a className="twitter mt-3" href={props.twitter} target="_blank">
+            <i className="fab fa-twitter fs-4" aria-hidden="true"></i>
+          </a>
+        </div>
       </div>
     </div>
   );
