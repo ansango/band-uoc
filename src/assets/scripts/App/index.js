@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
+import Loading from "./Views/Loading";
 
 const Home = React.lazy(() => import("./Views/Home/index"));
 const Band = React.lazy(() => import("./Views/Band/index"));
@@ -11,7 +12,7 @@ const NotFound = React.lazy(() => import("./Views/404/index"));
 
 export default () => {
   return (
-    <React.Suspense fallback={<p>Loading...</p>}>
+    <React.Suspense fallback={<Loading />}>
       <Router>
         <Navbar />
         <Switch>
