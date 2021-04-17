@@ -3,10 +3,9 @@ import Hero from "../../Components/Hero";
 export default () => {
   return (
     <div className="view_home">
-      <div className="container title-container text-center">
-        <h1 className="fw-bold title">
-          We are <code className="text-primary">!==</code> undefined
-        </h1>
+      <div className="title-container text-center">
+        <h1>a beat band</h1>
+        <code className="fw-bold text-primary"> !== </code>
       </div>
       <Hero />
     </div>

@@ -3,10 +3,10 @@ import { Link, NavLink } from "react-router-dom";
 
 export default () => {
   return (
-    <nav className="navbar navbar-expand-md navbar-light container-lg py-5">
+    <nav className="navbar navbar-expand-md navbar-light container-lg py-5 fw-bold">
       <div className="container-fluid">
-        <Link className="navbar-brand text-uppercase fw-bold" to="/">
-          not undefined
+        <Link className="navbar-brand" to="/">
+          <code className="text-primary">!</code>undefined
         </Link>
         <button
           className="navbar-toggler border-white "

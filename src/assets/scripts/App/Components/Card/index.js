@@ -11,15 +11,15 @@ export default (props) => {
           }}
         >
           <div>
-            <h5 className="">
+            <h5 className="fw-bold">
               <i className={`${props.emoji} fs-6 text-primary mx-2`}></i>
               {props.name}
             </h5>
-            <h6 className="">
+            <h6>
               <i className={`${props.icon} fs-6 text-primary mx-2`}></i>
               {props.position}
             </h6>
-            <q className="">
+            <q>
               <i className="far fa-heart fs-6 text-primary mx-2"></i>
               {props.love}
             </q>

@@ -8,20 +8,20 @@ export default () => {
       <div className="item item2"></div>
 
       <Link className="item item3 nav-link" to="/tour">
-        <span>TOUR</span>
+        <h3>TOUR</h3>
       </Link>
 
       <div className="item item4">
-        <span>A</span>
+        <h3>A</h3>
       </div>
       <div className="item item5">
-        <span>BEAT</span>
+        <h3>BEAT</h3>
       </div>
       <div className="item item6">
-        <span>BAND</span>
+        <h3>BAND</h3>
       </div>
       <Link className="item item7 nav-link" to="/band#contact">
-        <span>CONTACT</span>
+        <h3>CONTACT</h3>
       </Link>
       <div className="item item8"></div>
       <div className="item item9"></div>
