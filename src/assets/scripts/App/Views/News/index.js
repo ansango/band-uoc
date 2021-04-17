@@ -5,23 +5,28 @@ import parallax from "../../../../images/parallax/parallax.jpg";
 export default () => {
   return (
     <div className="view_news">
-      <Parallax img={image} />
-      <div className="container title-container">
-        <h2>
+      <Parallax
+        img={image}
+        height={500}
+        isTitle={true}
+        title={"New album is out"}
+      />
+      <div className="container">
+        <h2 className="py-5">
           Far far away, behind the word mountains, far from the countries
           Vokalia and Consonantia, there live the blind texts.
         </h2>
-        <h3>
+        <h4 className="py-5">
           Far far away, behind the word mountains, far from the countries
           Vokalia and Consonantia, there live the blind texts. Separated they
           live in Bookmarksgrove right at the coast of the Semantics, a large
           language ocean. Far far away, behind the word mountains. Far far away,
           behind the word mountains, far from the countries Vokalia and
           Consonantia, there live the blind texts.
-        </h3>
+        </h4>
       </div>
       <div className="container">
-        <hr></hr>
+        <hr className="my-5"></hr>
       </div>
       <div className="container">
         <div className="row">
@@ -64,10 +69,10 @@ export default () => {
       <div className="container">
         <div className="row">
           <div className="col-md-6">
-            <h3>
+            <h2>
               Far far away, behind the word mountains, far from the countries
               Vokalia and Consonantia
-            </h3>
+            </h2>
           </div>
           <div className="col-md-6">
             <h4>
