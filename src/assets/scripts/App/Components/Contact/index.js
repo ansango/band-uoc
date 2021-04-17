@@ -1,6 +1,9 @@
 import React from "react";
 
 export default () => {
+  function sayHello() {
+    alert("Hello!");
+  }
   return (
     <div className="container" id="contact">
       <div className="row my-5">
@@ -64,7 +67,12 @@ export default () => {
             </div>
             <div className="row mb-3">
               <div className="col-12">
-                <button type="submit" className="btn btn-primary text-white">
+                <button
+                  type="submit"
+                  className="btn btn-primary text-white"
+                  onClick={sayHello}
+                  id="liveToastBtn"
+                >
                   Send
                 </button>
               </div>
