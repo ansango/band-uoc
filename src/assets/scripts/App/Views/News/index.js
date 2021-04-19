@@ -2,14 +2,17 @@ import React from "react";
 import Parallax from "../../Components/Parallax";
 import Contact from "../../Components/Contact";
 import parallax from "../../../../images/parallax/parallax.jpg";
+import heart from "../../../../images/parallax/heart.jpg";
 export default () => {
   return (
     <div className="view_news">
       <Parallax
         img={image}
         height={500}
-        isTitle={true}
+        isTitle
+        isAlbum
         title={"New album is out"}
+        album={heart}
       />
       <div className="container">
         <h2 className="py-5">
@@ -86,7 +89,13 @@ export default () => {
           </div>
         </div>
       </div>
-      <Parallax img={image} />
+      <Parallax
+        img={image}
+        height={500}
+        isSocial
+        socialTitle={"Check the list!"}
+        tracks={tracks}
+      />
       <div className="container">
         <p>
           Far far away, behind the word mountains, far from the countries
@@ -129,5 +138,35 @@ export default () => {
 };
 
 const image = parallax;
-
-console.log(image);
+const tracks = [
+  {
+    id: 1,
+    name: "Hooks",
+    duration: 4.31,
+  },
+  {
+    id: 2,
+    name: "Press",
+    duration: 3.51,
+  },
+  {
+    id: 3,
+    name: "Finder",
+    duration: 5.19,
+  },
+  {
+    id: 4,
+    name: "Router",
+    duration: 5.21,
+  },
+  {
+    id: 5,
+    name: "Null",
+    duration: 2.35,
+  },
+  {
+    id: 6,
+    name: "Functional",
+    duration: 3.15,
+  },
+];
