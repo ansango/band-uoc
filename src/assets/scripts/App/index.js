@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
+import Modal from "./Components/Modal";
 import Loading from "./Views/Loading";
 
 const Home = React.lazy(() => import("./Views/Home/index"));
@@ -22,6 +23,7 @@ export default () => {
           <Route path="/tour" render={() => <Tour />}></Route>
           <Route path="*" render={() => <NotFound />}></Route>
         </Switch>
+        <Modal />
         <Footer />
       </Router>
     </React.Suspense>

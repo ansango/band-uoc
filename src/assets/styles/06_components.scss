@@ -8,6 +8,15 @@
  * Buttons..............Button elements.
  */
 
+.component_modal {
+  & .wrapper-button {
+    cursor: pointer;
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+  }
+}
+
 .component_hero {
   max-width: 1200px;
   margin: 0 auto;

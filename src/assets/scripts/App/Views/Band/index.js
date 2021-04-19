@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "../../Components/Card";
+import Card from "../../Components/Card/";
 import Quote from "../../Components/Quote";
 import braxton from "../../../../images/card/Braxton.jpg";
 import camille from "../../../../images/card/Camille.jpg";

@@ -5,9 +5,9 @@ export default () => {
     alert("Hello!");
   }
   return (
-    <div className="container" id="contact">
-      <div className="row my-5">
-        <div className="col-lg-8">
+    <div className="container py-2">
+      <div className="row">
+        <div className="col-12">
           <form name="contact">
             <input type="hidden" name="form-name" value="contact"></input>
             <div className="row mb-3">
@@ -79,7 +79,6 @@ export default () => {
             </div>
           </form>
         </div>
-        <div className="col-lg-4"></div>
       </div>
     </div>
   );
