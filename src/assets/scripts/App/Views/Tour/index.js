@@ -1,6 +1,7 @@
 import React from "react";
 import Ticket from "../../Components/Card/ticket";
-import Contact from "../../Components/Contact";
+import Table from "../../Components/Table";
+import Gallery from "../../Components/Gallery";
 export default () => {
   return (
     <div className="view view-tour">
@@ -12,34 +13,11 @@ export default () => {
           })}
         </div>
         <div className="container d-none d-md-block">
-          <table className="table">
-            <thead></thead>
-            <tbody>
-              {appoints.map((appoint, index) => {
-                let date = `${appoint.date.month} ${appoint.date.day} ${appoint.date.dayWeek}`;
-                let country = `${appoint.location[1].region}`;
-                let time = `${appoint.hour}`;
-                let place = `${appoint.location[0].place}`;
-                let event = `${place} | ${time}`;
-                return (
-                  <tr key={index}>
-                    <td>
-                      <i className="fas fa-ticket-alt text-primary"></i>
-                    </td>
-                    <td>{date}</td>
-                    <td>{event}</td>
-                    <td>{country}</td>
-                    <td>
-                      <button className="btn btn-primary text-white">
-                        Tickets
-                      </button>
-                    </td>
-                  </tr>
-                );
-              })}
-            </tbody>
-          </table>
+          <Table appoints={appoints} />
         </div>
+      </div>
+      <div className="container">
+        <Gallery />
       </div>
     </div>
   );
