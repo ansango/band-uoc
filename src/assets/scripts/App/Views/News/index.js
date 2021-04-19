@@ -5,7 +5,7 @@ import neon2 from "../../../../images/parallax/neon2.jpg";
 import clouds from "../../../../images/parallax/clouds.jpg";
 export default () => {
   return (
-    <div className="view_news">
+    <div className="view view_news">
       <Parallax
         img={neon}
         height={500}

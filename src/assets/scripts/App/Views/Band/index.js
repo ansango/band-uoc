@@ -10,7 +10,7 @@ import shannon from "../../../../images/card/Shannon.jpg";
 
 export default () => {
   return (
-    <div className="view_band">
+    <div className="view view_band">
       <div className="container title-container">
         <h1>HELLO WE ARE...</h1>
       </div>
@@ -49,7 +49,24 @@ export default () => {
           );
         })}
       </div>
-      <div className="container"></div>
+      <div className="container py-5">
+        <h3 className="py-3">
+          We were born in Berlin, we make noise, we like noise, we can't stop
+          making noise. Sometimes we do quieter things, but only when we have a
+          hangover on Fridays.
+        </h3>
+        <h3 className="py-3">
+          Covid has kept us from touring, but when it's over, you can find us in
+          basements, garages, churches, abandoned churches, discotheques,
+          country bars, posh places, punk places and wherever there's a plug and
+          wifi.
+        </h3>
+        <h3 className="py-3">
+          We like books, ipa punk beer, bikes, skateboarding and busting
+          tympani.
+        </h3>
+        <h3 className="py-3">We hope to see you soon. xxx</h3>
+      </div>
     </div>
   );
 };
