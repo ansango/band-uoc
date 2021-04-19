@@ -2,7 +2,7 @@ import React from "react";
 import Parallax from "../../Components/Parallax";
 import neon from "../../../../images/parallax/neon.jpg";
 import neon2 from "../../../../images/parallax/neon2.jpg";
-import heart from "../../../../images/parallax/heart.jpg";
+import clouds from "../../../../images/parallax/clouds.jpg";
 export default () => {
   return (
     <div className="view_news">
@@ -11,15 +11,15 @@ export default () => {
         height={500}
         isTitle
         isAlbum
-        title={"New album is out"}
-        album={heart}
+        title={"heartbeats it's out!"}
+        album={clouds}
       />
       <div className="container">
-        <h2 className="py-5">
+        <h2 className="">
           Far far away, behind the word mountains, far from the countries
           Vokalia and Consonantia, there live the blind texts.
         </h2>
-        <h4 className="py-5">
+        <h4 className="">
           Far far away, behind the word mountains, far from the countries
           Vokalia and Consonantia, there live the blind texts. Separated they
           live in Bookmarksgrove right at the coast of the Semantics, a large
@@ -29,7 +29,7 @@ export default () => {
         </h4>
       </div>
       <div className="container">
-        <hr className="my-5"></hr>
+        <hr className=""></hr>
       </div>
       <div className="container">
         <div className="row">

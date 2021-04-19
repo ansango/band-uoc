@@ -29,9 +29,9 @@ export default () => {
         })}
       </div>
       <div className="container title-container text-center">
-        <h1>
+        <h2>
           <code className="text-primary fw-bold">!==</code>
-        </h1>
+        </h2>
       </div>
       <div className="cards-container">
         {members.map((member, index) => {
@@ -49,6 +49,7 @@ export default () => {
           );
         })}
       </div>
+      <div className="container"></div>
     </div>
   );
 };

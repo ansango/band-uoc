@@ -61,22 +61,6 @@
 .view_band {
   margin: 0 auto;
   max-width: 960px;
-
-  h1 {
-    font-size: 4rem;
-    font-family: $font-family-serif;
-  }
-  @include mobile-lg {
-    h1 {
-      font-size: 4.5rem;
-    }
-  }
-
-  @include tablet {
-    h1 {
-      font-size: 7rem;
-    }
-  }
 }
 
 .component_card {
@@ -104,24 +88,42 @@
     height: 300px;
     border: 0.5rem solid $myBlack;
     background-size: cover;
-    & > * {
+    margin: 5px 0;
+    & .layer {
+      width: 100%;
+      height: 100%;
       display: none;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: $myWhite;
     }
-    & > a {
+    & a {
       cursor: pointer;
     }
-  }
 
-  /* stylelint-disable */
-  & .thumbnail:hover {
-    background-image: none !important;
-    background-color: $myWhite;
+    & h5 {
+      font-weight: bold;
+    }
 
-    & > * {
-      display: block;
+    & i {
+      margin: 0 0.5rem;
+      color: $primary;
+    }
+
+    & .twitter {
+      margin-top: 1rem;
+      & i {
+        font-size: 1.5rem;
+      }
     }
   }
-  /* stylelint-enable */
+
+  & .thumbnail:hover {
+    & .layer {
+      display: flex;
+    }
+  }
 }
 
 .note {
@@ -173,17 +175,21 @@
   }
 
   & .album {
-    width: 350px;
-    height: 350px;
+    width: 250px;
+    height: 250px;
     border-radius: 10px;
-    padding: 20px;
+    padding: 10px;
     background-color: $myWhite;
     transition: transform 1s;
     box-shadow: 0 9px 30px -1px rgba(178, 178, 178, 0.75);
     &:hover {
       transform: scale(1.2);
     }
-
+    @include mobile-lg {
+      width: 320px;
+      height: 320px;
+      padding: 15px;
+    }
     & .cover {
       background-size: cover;
       width: 100%;
@@ -221,5 +227,68 @@
     & i:hover {
       transform: scale(1.3);
     }
+  }
+}
+
+.footer {
+  padding: 40px 0;
+  & h3,
+  code {
+    text-transform: inherit;
+    font-weight: bold;
+    color: $primary;
+  }
+  & a {
+    text-decoration: none;
+  }
+  & ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  & .streaming p {
+    margin: 0;
+  }
+
+  & .streaming a {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+  }
+
+  & .streaming i {
+    display: flex;
+    justify-content: center;
+    width: 1.6rem;
+    margin-right: 5px;
+  }
+
+  & .brand,
+  .navigation,
+  .social-network {
+    display: flex;
+    align-items: center;
+  }
+
+  & .brand,
+  .navigation {
+    justify-content: center;
+  }
+
+  & .navigation {
+    & ul {
+      @include mobile-lg {
+        display: flex;
+      }
+    }
+
+    & li {
+      margin: 0 10px;
+    }
+  }
+
+  & .social-network {
+    font-size: 1.25rem;
+    justify-content: space-around;
   }
 }
