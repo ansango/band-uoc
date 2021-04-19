@@ -20,9 +20,15 @@ export default () => {
           data-bs-toggle="modal"
           data-bs-target="#exampleModal"
         >
-          <span className="me-2">Send us a mail</span>
-          <i className="far fa-envelope"></i>
+          Send us a mail
         </div>
+        <button
+          type="button"
+          class="btn-close btn-close-white me-2 m-auto"
+          data-bs-dismiss="toast"
+          aria-label="Close"
+          onClick={hideToast}
+        ></button>
       </div>
     </div>
   );
