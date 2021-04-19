@@ -1,13 +1,13 @@
 import React from "react";
 import Parallax from "../../Components/Parallax";
-import Contact from "../../Components/Contact";
-import parallax from "../../../../images/parallax/parallax.jpg";
+import neon from "../../../../images/parallax/neon.jpg";
+import neon2 from "../../../../images/parallax/neon2.jpg";
 import heart from "../../../../images/parallax/heart.jpg";
 export default () => {
   return (
     <div className="view_news">
       <Parallax
-        img={image}
+        img={neon}
         height={500}
         isTitle
         isAlbum
@@ -90,7 +90,7 @@ export default () => {
         </div>
       </div>
       <Parallax
-        img={image}
+        img={neon2}
         height={500}
         isSocial
         socialTitle={"Check the list!"}
@@ -137,7 +137,6 @@ export default () => {
   );
 };
 
-const image = parallax;
 const tracks = [
   {
     id: 1,
