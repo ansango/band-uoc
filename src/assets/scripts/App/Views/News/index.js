@@ -1,8 +1,6 @@
 import React from "react";
 import Parallax from "../../Components/Parallax";
-import neon from "../../../../images/parallax/neon.jpg";
 import neon2 from "../../../../images/parallax/neon2.jpg";
-import clouds from "../../../../images/parallax/clouds.jpg";
 import clouds2 from "../../../../images/parallax/clouds2.jpg";
 import big2 from "../../../../images/hero/big2.jpg";
 export default () => {
