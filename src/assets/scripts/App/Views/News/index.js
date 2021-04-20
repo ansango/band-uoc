@@ -3,16 +3,18 @@ import Parallax from "../../Components/Parallax";
 import neon from "../../../../images/parallax/neon.jpg";
 import neon2 from "../../../../images/parallax/neon2.jpg";
 import clouds from "../../../../images/parallax/clouds.jpg";
+import clouds2 from "../../../../images/parallax/clouds2.jpg";
+import big2 from "../../../../images/hero/big2.jpg";
 export default () => {
   return (
     <div className="view view_news">
       <Parallax
-        img={neon}
+        img={clouds2}
         height={500}
         isTitle
         isAlbum
         title={"heartbeats it's out!"}
-        album={clouds}
+        album={big2}
       />
       <div className="container">
         <h2 className="">
