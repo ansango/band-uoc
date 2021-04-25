@@ -1,6 +1,6 @@
 import React from "react";
-
-export default (props) => {
+import PropTypes from "prop-types";
+const Ticket = (props) => {
   let appoint = props.appoint;
   let date = `${appoint.date.month} ${appoint.date.day} ${appoint.date.dayWeek}`;
   let country = `${appoint.location[1].region}`;
@@ -23,3 +23,9 @@ export default (props) => {
     </div>
   );
 };
+
+Ticket.propTypes = {
+  appoint: PropTypes.array.isRequired,
+};
+
+export default Ticket;

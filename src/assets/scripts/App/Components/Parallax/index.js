@@ -1,13 +1,13 @@
 import React from "react";
-export default (props) => {
+const Parallax = (props) => {
   let vNewsTitle = (
     <div className="row">
       <div className="col-md-6 d-flex flex-column justify-content-center">
-        <h1>Stay Tuned!</h1>
+        <h1>{"Stay Tuned!"}</h1>
         <h3>{props.title}</h3>
       </div>
       <div className="col-md-6 d-flex justify-content-center">
-        <code className="logo">!==</code>
+        <code className="logo">{"!=="}</code>
       </div>
     </div>
   );
@@ -25,9 +25,9 @@ export default (props) => {
                   <li key={index} id={`track-${index}`}>
                     <div className="track-data">
                       <small>{index + 1}</small>
-                      <span>-</span>
+                      <span>{"-"}</span>
                       <strong>{track.name}</strong>
-                      <span>-</span>
+                      <span>{"-"}</span>
                       <small>{track.duration}</small>
                     </div>
                     <div className="track-options">
@@ -80,3 +80,5 @@ export default (props) => {
   );
   return parallax;
 };
+
+export default Parallax;

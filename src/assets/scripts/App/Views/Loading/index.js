@@ -1,13 +1,14 @@
 import React from "react";
-export default () => {
+const Loading = () => {
   return (
     <div className="d-flex justify-content-center align-items-center not-found">
-      <h1 className="mr-3 pr-3 align-top border-right inline-block align-content-center"></h1>
       <div className="inline-block align-middle">
         <h2 className="font-weight-normal lead" id="desc">
-          <code>!==</code>
+          <code>{"!=="}</code>
         </h2>
       </div>
     </div>
   );
 };
+
+export default Loading;

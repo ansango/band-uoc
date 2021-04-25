@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export default () => {
+const Hero = () => {
   return (
     <section className="component_hero">
       <div className="item item1"></div>
@@ -28,3 +28,5 @@ export default () => {
     </section>
   );
 };
+
+export default Hero;

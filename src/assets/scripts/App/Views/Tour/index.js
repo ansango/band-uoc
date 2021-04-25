@@ -4,7 +4,8 @@ import Table from "../../Components/Table";
 import Gallery from "../../Components/Gallery";
 import Parallax from "../../Components/Parallax";
 import smoke from "../../../../images/gallery/tour.jpg";
-export default () => {
+import appoints from "../../Data/appoints";
+const Tour = () => {
   return (
     <div className="view view-tour">
       <div className="mb-5">
@@ -28,96 +29,4 @@ export default () => {
   );
 };
 
-const appoints = [
-  {
-    id: 1,
-    date: {
-      month: "Jun",
-      day: 2,
-      dayWeek: "Thu",
-    },
-    location: [
-      { place: "Charles Krug Winery" },
-      { region: "St. Helena, CA, United States" },
-    ],
-    hour: "19:30",
-  },
-  {
-    id: 1,
-    date: {
-      month: "Jun",
-      day: 2,
-      dayWeek: "Thu",
-    },
-    location: [
-      { place: "Charles Krug Winery" },
-      { region: "St. Helena, CA, United States" },
-    ],
-    hour: "19:30",
-  },
-  {
-    id: 1,
-    date: {
-      month: "Jun",
-      day: 2,
-      dayWeek: "Thu",
-    },
-    location: [
-      { place: "Charles Krug Winery" },
-      { region: "St. Helena, CA, United States" },
-    ],
-    hour: "19:30",
-  },
-  {
-    id: 1,
-    date: {
-      month: "Jun",
-      day: 2,
-      dayWeek: "Thu",
-    },
-    location: [
-      { place: "Charles Krug Winery" },
-      { region: "St. Helena, CA, United States" },
-    ],
-    hour: "19:30",
-  },
-  {
-    id: 1,
-    date: {
-      month: "Jun",
-      day: 2,
-      dayWeek: "Thu",
-    },
-    location: [
-      { place: "Charles Krug Winery" },
-      { region: "St. Helena, CA, United States" },
-    ],
-    hour: "19:30",
-  },
-  {
-    id: 1,
-    date: {
-      month: "Jun",
-      day: 2,
-      dayWeek: "Thu",
-    },
-    location: [
-      { place: "Charles Krug Winery" },
-      { region: "St. Helena, CA, United States" },
-    ],
-    hour: "19:30",
-  },
-  {
-    id: 1,
-    date: {
-      month: "Jun",
-      day: 2,
-      dayWeek: "Thu",
-    },
-    location: [
-      { place: "Charles Krug Winery" },
-      { region: "St. Helena, CA, United States" },
-    ],
-    hour: "19:30",
-  },
-];
+export default Tour;

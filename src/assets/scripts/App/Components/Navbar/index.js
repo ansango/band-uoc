@@ -1,12 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export default () => {
+const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-md navbar-light container-lg py-5 fw-bold">
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">
-          <code className="text-primary">!</code>undefined
+          <code className="text-primary">{"!"}</code>
+          {"undefined"}
         </Link>
         <button
           className="navbar-toggler border-white "
@@ -26,17 +27,17 @@ export default () => {
           <ul className="navbar-nav">
             <li className="nav-item">
               <Link className="nav-link text-primary" to="/band">
-                band
+                {"band"}
               </Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link text-primary" to="/news">
-                news
+                {"news"}
               </Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link text-primary" to="/tour">
-                tour
+                {"tour"}
               </Link>
             </li>
           </ul>
@@ -45,3 +46,5 @@ export default () => {
     </nav>
   );
 };
+
+export default Navbar;

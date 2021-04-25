@@ -1,9 +1,6 @@
 import React from "react";
 
-export default () => {
-  function sayHello() {
-    alert("Hello!");
-  }
+const Contact = () => {
   return (
     <div className="container py-2">
       <div className="row">
@@ -13,7 +10,7 @@ export default () => {
             <div className="row mb-3">
               <div className="col-12 col-md-6">
                 <label htmlFor="email" className="form-label">
-                  Email address
+                  {"Email address"}
                 </label>
                 <input
                   type="email"
@@ -25,7 +22,7 @@ export default () => {
 
               <div className="col-12 col-md-6">
                 <label htmlFor="name" className="form-label">
-                  Name
+                  {"Name"}
                 </label>
                 <input
                   type="text"
@@ -38,7 +35,7 @@ export default () => {
             <div className="row mb-3">
               <div className="col-12">
                 <label htmlFor="comment" className="form-label">
-                  Say something!
+                  {"Say something!"}
                 </label>
                 <textarea
                   className="form-control"
@@ -57,9 +54,9 @@ export default () => {
                     id="privacy"
                   ></input>
                   <label className="form-check-label" htmlFor="privacy">
-                    I agree to the{" "}
-                    <a href="#" target="_blank" className="text-primary">
-                      privacy policy
+                    {"I agree to the "}
+                    <a href="/#" target="_blank" className="text-primary">
+                      {"privacy policy"}
                     </a>
                   </label>
                 </div>
@@ -70,10 +67,9 @@ export default () => {
                 <button
                   type="submit"
                   className="btn btn-primary text-white"
-                  onClick={sayHello}
                   id="liveToastBtn"
                 >
-                  Send
+                  {"Send"}
                 </button>
               </div>
             </div>
@@ -83,3 +79,5 @@ export default () => {
     </div>
   );
 };
+
+export default Contact;

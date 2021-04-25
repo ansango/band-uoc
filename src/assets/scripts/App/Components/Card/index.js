@@ -1,6 +1,6 @@
 import React from "react";
-
-export default (props) => {
+import PropTypes from "prop-types";
+const Card = (props) => {
   return (
     <div className="component_card">
       <div className="component_content">
@@ -26,7 +26,12 @@ export default (props) => {
               </q>
             </div>
 
-            <a className="twitter" href={props.twitter} target="_blank">
+            <a
+              className="twitter"
+              href={props.twitter}
+              target="_blank"
+              rel="noreferrer"
+            >
               <i className="fab fa-twitter" aria-hidden="true"></i>
             </a>
           </div>
@@ -35,3 +40,15 @@ export default (props) => {
     </div>
   );
 };
+
+Card.propTypes = {
+  thumb: PropTypes.string.isRequired,
+  emoji: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  icon: PropTypes.string.isRequired,
+  position: PropTypes.string.isRequired,
+  love: PropTypes.string.isRequired,
+  twitter: PropTypes.string.isRequired,
+};
+
+export default Card;

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
@@ -11,7 +11,7 @@ const News = React.lazy(() => import("./Views/News/index"));
 const Tour = React.lazy(() => import("./Views/Tour/index"));
 const NotFound = React.lazy(() => import("./Views/404/index"));
 
-export default () => {
+const App = () => {
   return (
     <React.Suspense fallback={<Loading />}>
       <Router>
@@ -29,3 +29,5 @@ export default () => {
     </React.Suspense>
   );
 };
+
+export default App;
