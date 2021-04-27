@@ -12,29 +12,29 @@ const News = () => {
         height={500}
         isTitle
         isAlbum
-        title={"heartbeats it's out!"}
+        title={"the storm it's out!"}
         album={big2}
       />
-      <div className="container">
-        <h2>
-          {
-            "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
-          }
-        </h2>
-        <h4>
+      <div className="container p-5">
+        <div>
+          <h2 className="pb-3 p-lg-5">
+            {
+              "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+            }
+          </h2>
+        </div>
+        <h4 className="pb-3 p-lg-5">
           {
             "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. Far far away, behind the word mountains. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
           }
         </h4>
       </div>
-      <div className="container">
-        <hr className=""></hr>
-      </div>
+
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <ol>
-              <li>
+            <ol className="px-lg-5">
+              <li className="px-lg-5 mb-lg-5">
                 <strong>{"Item One"}</strong>
                 <p>
                   {
@@ -42,7 +42,7 @@ const News = () => {
                   }
                 </p>
               </li>
-              <li>
+              <li className="px-lg-5 mb-lg-5">
                 <strong>{"Item Two"}</strong>
                 <p>
                   {
@@ -50,7 +50,7 @@ const News = () => {
                   }
                 </p>
               </li>
-              <li>
+              <li className="px-lg-5 mb-lg-5">
                 <strong>{"Item Three"}</strong>
                 <p>
                   {
@@ -62,19 +62,17 @@ const News = () => {
           </div>
         </div>
       </div>
-      <div className="container">
-        <hr></hr>
-      </div>
-      <div className="container">
-        <div className="row">
-          <div className="col-md-6">
+
+      <div className="container p-5">
+        <div className="row px-lg-5">
+          <div className="col-md-6 mb-5 px-lg-4">
             <h2>
               {
                 "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia"
               }
             </h2>
           </div>
-          <div className="col-md-6">
+          <div className="col-md-6 mb-5 px-lg-4">
             <h4>
               {
                 "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove"
@@ -91,41 +89,43 @@ const News = () => {
         tracks={tracks}
       />
       <div className="container">
-        <p>
+        <p className="p-5">
           {
             "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. Far far away, behind the word mountains"
           }
         </p>
       </div>
-      <nav aria-label="Page navigation example">
-        <ul className="pagination">
-          <li className="page-item">
-            <a className="page-link" href="/#">
-              Previous
-            </a>
-          </li>
-          <li className="page-item">
-            <a className="page-link" href="/#">
-              1
-            </a>
-          </li>
-          <li className="page-item">
-            <a className="page-link" href="/#">
-              2
-            </a>
-          </li>
-          <li className="page-item">
-            <a className="page-link" href="/#">
-              3
-            </a>
-          </li>
-          <li className="page-item">
-            <a className="page-link" href="/#">
-              Next
-            </a>
-          </li>
-        </ul>
-      </nav>
+      <div className="container d-flex justify-content-center">
+        <nav aria-label="Page navigation example">
+          <ul className="pagination">
+            <li className="page-item">
+              <a className="page-link" href="/#">
+                Previous
+              </a>
+            </li>
+            <li className="page-item">
+              <a className="page-link" href="/#">
+                1
+              </a>
+            </li>
+            <li className="page-item">
+              <a className="page-link" href="/#">
+                2
+              </a>
+            </li>
+            <li className="page-item">
+              <a className="page-link" href="/#">
+                3
+              </a>
+            </li>
+            <li className="page-item">
+              <a className="page-link" href="/#">
+                Next
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
   );
 };
