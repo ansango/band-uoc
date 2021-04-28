@@ -8,7 +8,7 @@
  * Buttons..............Button elements.
  */
 
-.gallery {
+.component_gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 1.5rem;

@@ -8,6 +8,10 @@
 
 .view {
   padding-bottom: 200px;
+  & .view_band {
+    margin: 0 auto;
+    max-width: 960px;
+  }
 }
 
 .title-container {

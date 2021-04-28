@@ -2,7 +2,7 @@ import React from "react";
 import images from "../../Data/gallery";
 const Gallery = () => {
   return (
-    <div className="gallery">
+    <div className="component_gallery">
       {images.map((image, index) => {
         return (
           <figure key={index} className="gallery-frame">
