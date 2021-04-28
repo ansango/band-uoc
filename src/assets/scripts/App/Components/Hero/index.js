@@ -20,8 +20,8 @@ const Hero = () => {
       <div className="item item6">
         <h3>BAND</h3>
       </div>
-      <Link className="item item7 nav-link" to="/band#contact">
-        <h3>CONTACT</h3>
+      <Link className="item item7 nav-link" to="/news">
+        <h3>NEWS</h3>
       </Link>
       <div className="item item8"></div>
       <div className="item item9"></div>
