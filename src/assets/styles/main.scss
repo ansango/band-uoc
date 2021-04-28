@@ -21,13 +21,13 @@
  ** TRUMPS - 07_trumps
  */
 
-@import "01_settings";
-@import "02_tools";
-@import "03_generic";
-@import "04_elements";
-@import "05_objects";
-@import "06_components";
-@import "07_trumps";
+@import "01-settings/index";
+@import "02-tools/index";
+@import "03-generic/index";
+@import "04-elements/index";
+@import "05-objects/index";
+@import "06-components/index";
+@import "07-trumps/index";
 
 /**
  * Import npm dependencies
